@@ -12,6 +12,7 @@
                         <th scope="col">Serie</th>
                         <th scope="col">Data di vendita</th>
                         <th scope="col">Tipologia</th>
+                        <th>Opzioni</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,6 +25,7 @@
                             <td>{{ $comic->series }}</td>
                             <td>{{ $comic->sale_date }}</td>
                             <td>{{ $comic->type }}</td>
+                            <td><a href="{{ route('comics.show', $comic) }}">view</a></td>
 
 
                         </tr>
