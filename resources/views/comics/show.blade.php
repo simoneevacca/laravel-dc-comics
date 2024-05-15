@@ -5,7 +5,7 @@
     <div class="d-flex ">
         <img width="1500" src="{{ $comic->thumb }}" alt="">
 
-        <div class="mx-4">
+        <div class="px-4">
             <strong>{{ $comic->series }}</strong>
             <p>{{ $comic->description }}</p>
             <strong>Prezzo: </strong>{{ $comic->price}} <br>

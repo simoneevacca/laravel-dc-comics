@@ -41,12 +41,12 @@
                             <td>No record</td>
                             <td>No record</td>
                             <td>No record</td>
-
-
                         </tr>
                     @endforelse
                 </tbody>
             </table>
         </div>
+
+        {{ $comics->links('pagination::bootstrap-5') }}
     </div>
 @endsection
