@@ -2,6 +2,10 @@
 @section('content')
     <div class="container">
         <h1>home</h1>
+        <a href="{{ route('comics.create') }}" class="btn btn-primary" >
+            Add new
+        </a>
+
         <div class="table-responsive">
             <table class="table table-primary">
                 <thead>
