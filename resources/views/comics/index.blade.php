@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <h1>home</h1>
-        <a href="{{ route('comics.create') }}" class="btn btn-primary" >
+        <h1 class="my-5">Tutti i fumetti</h1>
+        <a href="{{ route('comics.create') }}" class="btn btn-primary mb-4" >
             Add new
         </a>
 
