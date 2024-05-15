@@ -1,8 +1,13 @@
 @extends('layouts.app')
 @section('content')
+
+
     <div class="container">
         <h1>Inserisci i dati</h1>
+
+
         <form action="{{ route('comics.store') }}" method="post">
+            @csrf
 
             <div class="mb-3">
                 <label for="title" class="form-label">Titolo</label>
