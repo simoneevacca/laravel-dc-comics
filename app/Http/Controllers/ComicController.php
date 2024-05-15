@@ -12,7 +12,8 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        // dd(comic::all());
+        return view("home", ['comics' => Comic::all()]);
     }
 
     /**
