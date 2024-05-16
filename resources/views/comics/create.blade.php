@@ -1,7 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <h1>Inserisci i dati</h1>
+        <div class="d-flex my-5 justify-content-between">
+            <h1>Inserisci i dati</h1>
+            <a href="{{ route('comics.index') }}" class="btn btn-secondary d-flex align-items-center gap-3">
+                <i class="fa-solid fa-left-long fa-lg"></i>
+                <h5>Back</h5>
+            </a>
+        </div>
         @include('partials.validation-errors')
 
 
