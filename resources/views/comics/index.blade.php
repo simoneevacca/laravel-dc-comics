@@ -32,7 +32,11 @@
                             <td>
                                 <a href="{{ route('comics.show', $comic) }}">view</a>
                                 <a href="{{ route('comics.edit', $comic) }}">edit</a>
-                                <a href="{{ route('comics.show', $comic) }}">delete</a>
+                                <form action="{{ route('comics.destroy', $comic) }}" method="post">
+                                    @csrf
+                                    @method('DELETE')
+                                    <input type="submit" value="delete">
+                                </form>
                             </td>
 
 
