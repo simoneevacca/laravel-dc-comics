@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="d-flex ">
-            <img width="1500" src="{{ $comic->thumb }}" alt="">
+            <img class="thumb" src="{{ $comic->thumb }}" alt="">
 
             <div class="px-4">
                 <strong>{{ $comic->series }}</strong>
